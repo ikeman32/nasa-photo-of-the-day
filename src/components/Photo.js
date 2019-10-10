@@ -4,6 +4,7 @@ import PhotoCard from "./PhotoCard";
 
 export default function Photo() {
     const [photos, setPhotos] = useState([]);
+    const [nasaData, setNasaData] = useState([]);
 
     useEffect(() => {
         axios
@@ -11,6 +12,7 @@ export default function Photo() {
             .then(res => {
                 console.log(res.data);
                 setPhotos(res.data.url);
+                setNasaData(res.data);
             })
             .catch(error => {
                 console.log("The data was not returned", error);
@@ -20,6 +22,11 @@ export default function Photo() {
     return ( <
         div > { <
             PhotoCard url = { photos }
+            PhotoCard title = { nasaData.title }
+            PhotoCard copyright = { nasaData.copyright }
+            PhotoCard date = { nasaData.date }
+            PhotoCard explanation = { nasaData.explanation }
+
             />
         } <
         /div>

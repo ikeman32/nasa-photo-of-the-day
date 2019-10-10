@@ -5,7 +5,14 @@ const PhotoCard = props => {
         div className = "daily_photo" >
         <
         img src = { props.url }
-        alt = "" / > < /
+        alt = "" / >
+        <
+        h2 > { props.title } < /h2> <
+        p > { props.copyright } < /p> <
+        p > { props.date } < /p> <
+        p className = "description" > {
+            props.explanation
+        } < /p> < /
         div >
     );
 };
