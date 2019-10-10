@@ -2,7 +2,7 @@ import React from "react";
 
 const PhotoCard = props => {
     return ( <
-        div >
+        div className = "daily_photo" >
         <
         img src = { props.url }
         alt = "" / > < /

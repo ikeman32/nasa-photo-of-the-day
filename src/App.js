@@ -6,9 +6,7 @@ function App() {
     return ( <
         div className = "App" >
         <
-        p >
-        Read through the instructions in the README.md file to build your NASA app!Have fun < span role = "img" > 🚀! < /span>{" "} <
-        /p>{" "} <
+        h1 > NASA Photo of the Day < /h1> <
         Photo / >
         <
         /div>
