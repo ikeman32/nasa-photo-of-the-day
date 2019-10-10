@@ -69,6 +69,10 @@ Follow these steps for completing your project.
 - In your `.then()` make sure to `console.log` the response so you can look at the shape of the data. 😃
 - Before you add your data to state, make sure your effect hook has a dependency array (probably empty, since we don't want this effect synced up to any state/props), otherwise you will start an **infinite loop, and you will exceed the API rate limits of the DEMO_KEY and need to use a real API_KEY.**
 
+API Key: 62ZkkSawXLDDlq1n8i5bnfpMjkvwl5ac5tcCY1so
+
+https://api.nasa.gov/planetary/apod?api_key=62ZkkSawXLDDlq1n8i5bnfpMjkvwl5ac5tcCY1so
+
 DEMO KEY rate limits:
 
 > Hourly Limit: 30 requests per IP address per hour
